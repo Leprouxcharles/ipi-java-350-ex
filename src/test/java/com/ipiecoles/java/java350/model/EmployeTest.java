@@ -89,16 +89,4 @@ public class EmployeTest {
         Assertions.assertThat(prime).isEqualTo(primeFinal);
     }
 
-
-   /* @ParameterizedTest(name = "immat {0} est valide : {1}")
-    @CsvSource({
-            "'XXXXX', false",
-            "'AA-123-BB', true"
-    })
-    void testCheckBadImmatriculation(String immat, Boolean result) {
-        //Given, When, Then
-        Employe employe = new Employe();
-        Assertions.assertThat(employe.getPrimeAnnuelle()).isEqualTo(result);
-    }*/
-
 }
