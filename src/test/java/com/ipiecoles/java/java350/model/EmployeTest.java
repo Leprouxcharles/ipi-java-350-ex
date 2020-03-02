@@ -69,21 +69,28 @@ public class EmployeTest {
     }
 
 
-    @Test
-    public void testGetPrimeAnnuellePrimeAnciennete(){
+    @ParameterizedTest
+    @CsvSource({
+            "'T12345', 0, 1.0, 1, 1000,0",
+            "'T12345', 0, 0.5, 1, 500,0"
+    })
+    public void testGetPrimeAnnuelle(String matricule, Integer nbAnneeAnciennte, Double tempsPartiel, Integer performance, Double primeFinal){
         //Given = Initialisation des données d'entrée
         Employe employe = new Employe();
-        employe.setDateEmbauche(LocalDate.now().minusYears(3));
+        employe.setMatricule(matricule);
+        employe.setDateEmbauche(LocalDate.now().minusYears(nbAnneeAnciennte));
+        employe.setTempsPartiel(tempsPartiel);
+        employe.setPerformance(performance);
 
         //When = Exécution de la méthode à tester
-        Integer nombreAnneeAnciennete = employe.getNombreAnneeAnciennete();
+        Double prime = employe.getPrimeAnnuelle();
 
         //Then = Vérifications de ce qu'a fait la méthode
-        Assertions.assertThat(nombreAnneeAnciennete).isEqualTo(0);
+        Assertions.assertThat(prime).isEqualTo(primeFinal);
     }
 
 
-    @ParameterizedTest(name = "immat {0} est valide : {1}")
+   /* @ParameterizedTest(name = "immat {0} est valide : {1}")
     @CsvSource({
             "'XXXXX', false",
             "'AA-123-BB', true"
@@ -92,6 +99,6 @@ public class EmployeTest {
         //Given, When, Then
         Employe employe = new Employe();
         Assertions.assertThat(employe.getPrimeAnnuelle()).isEqualTo(result);
-    }
+    }*/
 
 }
