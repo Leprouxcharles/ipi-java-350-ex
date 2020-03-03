@@ -103,17 +103,6 @@ public class EmployeServiceTest {
         Mockito.when(employeRepository.findLastMatricule()).thenReturn(null);
         Mockito.when(employeRepository.findByMatricule("T00001")).thenReturn(new Employe());
 
-
-        /*//When
-        try {
-            employeService.embaucheEmploye(nom,prenom,poste,niveauEtude,tempsPartiel);
-            Assertions.fail("Une exception aurait du être levé");
-        } catch (EntityExistsException e) {
-            //Then
-            Assertions.assertThat(e.getMessage()).isEqualTo("L'employé de matricule T00001 existe déjà en BDD");
-        }*/
-
-
        //When
        Throwable exception = Assertions.catchThrowable(() ->
                employeService.embaucheEmploye(nom,prenom,poste,niveauEtude,tempsPartiel));
