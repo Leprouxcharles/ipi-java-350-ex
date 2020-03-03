@@ -2,6 +2,7 @@ package com.ipiecoles.java.java350.repository;
 
 import com.ipiecoles.java.java350.model.Employe;
 import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,6 +42,7 @@ public class EmployeRepositoryTest {
     };
 
     @BeforeEach
+    @AfterEach
     public void before(){
         employeRepository.deleteAll();
     };
