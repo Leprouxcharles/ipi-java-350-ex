@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
+import javax.persistence.EntityExistsException;
 import java.time.LocalDate;
 
 import static com.ipiecoles.java.java350.model.Entreprise.SALAIRE_BASE;
@@ -113,6 +114,46 @@ public class EmployeTest {
         //Then = Vérifications de ce qu'a fait la méthode
         Assertions.assertThat(tempsPartiel).isEqualTo(tempsPartielFinal);
         Assertions.assertThat(salaire).isEqualTo(salaireFinal);
+    }
+
+
+
+    @ParameterizedTest
+    @CsvSource({
+            "2200.0, 0.1",
+            "2000.0, 0.15",
+    })
+    public void testaugmenterSalaire(Double salaireFinal, Double pourcentage) throws Exception {
+
+        //Given = Initialisation des données d'entrée
+        Employe employe = new Employe();
+        employe.setSalaire(2000.0);
+
+        //When = Exécution de la méthode à tester
+        Double salaire = employe.augmenterSalaire(pourcentage);
+
+        //Then = Vérifications de ce qu'a fait la méthode
+        Assertions.assertThat(salaire).isEqualTo(salaireFinal);
+    }
+
+    @ParameterizedTest
+    @CsvSource({
+            "2000.0, 0"
+    })
+    public void testaugmenterSalairePoucentageNull(Double salaireFinal, Double pourcentage) throws Exception {
+
+        //Given = Initialisation des données d'entrée
+        Employe employe = new Employe();
+        employe.setSalaire(2000.0);
+
+
+        //When = Exécution de la méthode à tester
+        Throwable exception = Assertions.catchThrowable(() ->
+                employe.augmenterSalaire(pourcentage));
+
+        //Then = Vérifications de ce qu'a fait la méthode
+        Assertions.assertThat(exception).isInstanceOf(Exception.class);
+        Assertions.assertThat(exception.getMessage()).isEqualTo("Poucentage ne peut pas être null");
     }
 
 }

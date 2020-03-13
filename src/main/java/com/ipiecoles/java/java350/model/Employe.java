@@ -105,6 +105,20 @@ public class Employe {
         return prime * this.tempsPartiel;
     }
 
+    //Augmenter salaire
+    public Double augmenterSalaire(double pourcentage) throws Exception {
+        Double poucentageMax = 0.15;
+        if(pourcentage == 0){
+            throw new Exception("Poucentage ne peut pas être null");
+        }else {
+            if(pourcentage < poucentageMax){
+                this.salaire =  this.salaire * (1 + pourcentage);
+            }
+        }
+
+        return  salaire;
+    }
+
 
     public Long getId() {
         return id;
