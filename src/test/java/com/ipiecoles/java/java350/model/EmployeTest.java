@@ -156,4 +156,27 @@ public class EmployeTest {
         Assertions.assertThat(exception.getMessage()).isEqualTo("Poucentage ne peut pas être null");
     }
 
+
+    @ParameterizedTest
+    @CsvSource({
+            "2019-01-01, 8, 1",
+            "2021-01-01, 10, 1",
+            "2022-01-01, 10, 1",
+            "2032-01-01, 11, 1",
+            "2022-01-01, 5, 0.5",
+            "2032-01-01, 6, 0.5",
+    })
+    public void testgetNbRtt(LocalDate date, Integer nbRTFinal, Double tempsPartiel ) throws EmployeException {
+
+        //Given = Initialisation des données d'entrée
+        Employe employe = new Employe();
+        employe.setTempsPartiel(tempsPartiel);
+
+        //When = Exécution de la méthode à tester
+        Integer nbRtt = employe.getNbRtt(date);
+
+        //Then = Vérifications de ce qu'a fait la méthode
+        Assertions.assertThat(nbRtt).isEqualTo(nbRTFinal);
+    }
+
 }
