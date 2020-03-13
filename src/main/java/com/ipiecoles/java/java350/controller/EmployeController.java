@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.persistence.EntityNotFoundException;
 import java.util.Optional;
-/*
+
 @RestController
 @RequestMapping("/employes")
 public class EmployeController {
@@ -32,5 +32,5 @@ public class EmployeController {
         return e.getMessage();
     }
 }
-*/
- 
+
+
