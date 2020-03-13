@@ -1,11 +1,14 @@
 package com.ipiecoles.java.java350.model;
 
+import com.ipiecoles.java.java350.exception.EmployeException;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 import java.time.LocalDate;
+
+import static com.ipiecoles.java.java350.model.Entreprise.SALAIRE_BASE;
 
 public class EmployeTest {
 
@@ -74,7 +77,7 @@ public class EmployeTest {
             "'T12345', 0, 1.0, 1, 1000,0",
             "'T12345', 0, 0.5, 1, 500,0"
     })
-    public void testGetPrimeAnnuelle(String matricule, Integer nbAnneeAnciennte, Double tempsPartiel, Integer performance, Double primeFinal){
+    public void testGetPrimeAnnuelle(String matricule, Integer nbAnneeAnciennte, Double tempsPartiel, Integer performance, Double primeFinal) throws EmployeException {
         //Given = Initialisation des données d'entrée
         Employe employe = new Employe();
         employe.setMatricule(matricule);
@@ -87,6 +90,29 @@ public class EmployeTest {
 
         //Then = Vérifications de ce qu'a fait la méthode
         Assertions.assertThat(prime).isEqualTo(primeFinal);
+    }
+
+
+    @ParameterizedTest
+    @CsvSource({
+            "1521.22, 1",
+            "760.61, 0.5"
+    })
+    public void testTempsPartiel(Double salaireFinal, Double tempsPartielFinal) throws EmployeException {
+
+        //Given = Initialisation des données d'entrée
+        Employe employe = new Employe();
+
+        employe.setTempsPartiel(tempsPartielFinal);
+
+        //When = Exécution de la méthode à tester
+        Double tempsPartiel = employe.getTempsPartiel();
+        Double salaire = employe.getSalaire();
+
+
+        //Then = Vérifications de ce qu'a fait la méthode
+        Assertions.assertThat(tempsPartiel).isEqualTo(tempsPartielFinal);
+        Assertions.assertThat(salaire).isEqualTo(salaireFinal);
     }
 
 }

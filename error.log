@@ -1,0 +1,35 @@
+12-03-2020 10:25:59 - INFO  - c.i.java.java350.service.EmployeService - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
+12-03-2020 10:25:59 - INFO  - c.i.java.java350.service.EmployeService - Employé Employe{id=null, nom='Doe', prenom='John', matricule='T00345', dateEmbauche=2020-03-12, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé
+12-03-2020 10:25:59 - INFO  - c.i.java.java350.service.EmployeService - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
+12-03-2020 10:25:59 - WARN  - c.i.java.java350.service.EmployeService - Limite des 100000 matricules atteinte !
+12-03-2020 10:25:59 - INFO  - c.i.java.java350.service.EmployeService - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
+12-03-2020 10:25:59 - INFO  - c.i.java.java350.service.EmployeService - Matricul initial affecté à l'employé
+12-03-2020 10:25:59 - WARN  - c.i.java.java350.service.EmployeService - L'employé de matricule T00001 existe déjà en BDD
+12-03-2020 10:41:29 - INFO  - c.i.java.java350.service.EmployeService - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
+12-03-2020 10:41:29 - INFO  - c.i.java.java350.service.EmployeService - Employé Employe{id=null, nom='Doe', prenom='John', matricule='T00345', dateEmbauche=2020-03-12, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé
+12-03-2020 10:41:29 - INFO  - c.i.java.java350.service.EmployeService - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
+12-03-2020 10:41:29 - WARN  - c.i.java.java350.service.EmployeService - Limite des 100000 matricules atteinte !
+12-03-2020 10:41:29 - INFO  - c.i.java.java350.service.EmployeService - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
+12-03-2020 10:41:29 - INFO  - c.i.java.java350.service.EmployeService - Matricul initial affecté à l'employé
+12-03-2020 10:41:29 - WARN  - c.i.java.java350.service.EmployeService - L'employé de matricule T00001 existe déjà en BDD
+12-03-2020 10:45:21 - INFO  - c.i.java.java350.service.EmployeService - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
+12-03-2020 10:45:21 - INFO  - c.i.java.java350.service.EmployeService - Employé Employe{id=null, nom='Doe', prenom='John', matricule='T00345', dateEmbauche=2020-03-12, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé
+12-03-2020 10:45:21 - INFO  - c.i.java.java350.service.EmployeService - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
+12-03-2020 10:45:21 - WARN  - c.i.java.java350.service.EmployeService - Limite des 100000 matricules atteinte !
+12-03-2020 10:45:21 - INFO  - c.i.java.java350.service.EmployeService - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
+12-03-2020 10:45:21 - INFO  - c.i.java.java350.service.EmployeService - Matricul initial affecté à l'employé
+12-03-2020 10:45:21 - WARN  - c.i.java.java350.service.EmployeService - L'employé de matricule T00001 existe déjà en BDD
+12-03-2020 10:47:49 - INFO  - c.i.java.java350.service.EmployeService - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
+12-03-2020 10:47:50 - INFO  - c.i.java.java350.service.EmployeService - Employé Employe{id=null, nom='Doe', prenom='John', matricule='T00345', dateEmbauche=2020-03-12, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé
+12-03-2020 10:47:50 - INFO  - c.i.java.java350.service.EmployeService - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
+12-03-2020 10:47:50 - WARN  - c.i.java.java350.service.EmployeService - Limite des 100000 matricules atteinte !
+12-03-2020 10:47:50 - INFO  - c.i.java.java350.service.EmployeService - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
+12-03-2020 10:47:50 - INFO  - c.i.java.java350.service.EmployeService - Matricul initial affecté à l'employé
+12-03-2020 10:47:50 - WARN  - c.i.java.java350.service.EmployeService - L'employé de matricule T00001 existe déjà en BDD
+12-03-2020 11:11:35 - INFO  - c.i.java.java350.service.EmployeService - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
+12-03-2020 11:11:35 - INFO  - c.i.java.java350.service.EmployeService - Employé Employe{id=null, nom='Doe', prenom='John', matricule='T00345', dateEmbauche=2020-03-12, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé
+12-03-2020 11:11:35 - INFO  - c.i.java.java350.service.EmployeService - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
+12-03-2020 11:11:35 - WARN  - c.i.java.java350.service.EmployeService - Limite des 100000 matricules atteinte !
+12-03-2020 11:11:35 - INFO  - c.i.java.java350.service.EmployeService - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
+12-03-2020 11:11:35 - INFO  - c.i.java.java350.service.EmployeService - Matricul initial affecté à l'employé
+12-03-2020 11:11:35 - WARN  - c.i.java.java350.service.EmployeService - L'employé de matricule T00001 existe déjà en BDD

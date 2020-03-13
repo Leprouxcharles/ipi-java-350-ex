@@ -1,5 +1,6 @@
 package com.ipiecoles.java.java350.model;
 
+import com.ipiecoles.java.java350.exception.EmployeException;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -195,8 +196,13 @@ public class Employe {
         return tempsPartiel;
     }
 
-    public void setTempsPartiel(Double tempsPartiel) {
-        this.tempsPartiel = tempsPartiel;
+    public void setTempsPartiel(Double tempsPartiel) throws EmployeException {
+        if(tempsPartiel != null) {
+            this.tempsPartiel = tempsPartiel;
+            this.salaire = this.salaire * this.tempsPartiel;
+        }else {
+            throw new EmployeException("Le temps partiel " + tempsPartiel +" est incorrect");
+        }
     }
 
     @Override
@@ -211,6 +217,20 @@ public class Employe {
                 Objects.equals(dateEmbauche, employe.dateEmbauche) &&
                 Objects.equals(salaire, employe.salaire) &&
                 Objects.equals(performance, employe.performance);
+    }
+
+    @Override
+    public String toString() {
+        return "Employe{" +
+                "id=" + id +
+                ", nom='" + nom + '\'' +
+                ", prenom='" + prenom + '\'' +
+                ", matricule='" + matricule + '\'' +
+                ", dateEmbauche=" + dateEmbauche +
+                ", salaire=" + salaire +
+                ", performance=" + performance +
+                ", tempsPartiel=" + tempsPartiel +
+                '}';
     }
 
     @Override

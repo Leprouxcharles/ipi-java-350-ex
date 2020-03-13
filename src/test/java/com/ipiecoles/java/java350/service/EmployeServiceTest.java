@@ -114,4 +114,20 @@ public class EmployeServiceTest {
 
     }
 
+
+
+    @Test
+    public void testCalculSalireMoyen() throws Exception {
+        //Given
+        Mockito.when(employeRepository.count()).thenReturn(10l);
+        Mockito.when(employeRepository.sumSalaire()).thenReturn(10000d);
+        Mockito.when(employeRepository.sumTempsPartiel()).thenReturn(10d);
+
+        //When
+        Double salaireMoyen = employeService.calculSalaireMoyenETP();
+
+        //Then
+        Assertions.assertThat(salaireMoyen).isEqualTo(1000d);
+    }
+
 }

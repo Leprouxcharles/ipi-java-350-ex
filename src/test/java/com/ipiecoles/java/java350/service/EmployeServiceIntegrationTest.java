@@ -17,7 +17,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-
+import java.util.List;
 
 
 @SpringBootTest
@@ -61,4 +61,23 @@ public class EmployeServiceIntegrationTest {
         //1521.22 * 1.2 * 1.0
         Assertions.assertEquals(1825.46, employe.getSalaire().doubleValue());
     }
+
+
+    @Test
+    public void integrationEmployeGagnantMoinsQue() throws EmployeException {
+        //Given
+        employeRepository.save(new Employe("Doe", "John", "T12345", LocalDate.now(), Entreprise.SALAIRE_BASE, 1, 1.0));
+        employeRepository.save(new Employe("Rib", "Samuel", "T12346", LocalDate.now(), Entreprise.SALAIRE_BASE +20.00, 1, 1.0));
+        employeRepository.save(new Employe("Simon", "Jc", "T12348", LocalDate.now(), Entreprise.SALAIRE_BASE -20.00, 1, 1.0));
+
+        //When
+        List<Employe> employeList = employeService.EmployeGagnantMoinsQue("T12345");
+
+        //Then
+        Employe e = employeRepository.findByMatricule("T12348");
+
+        Assertions.assertTrue(1 == employeList.size());
+        Assertions.assertEquals(e, employeList.get(0));
+    }
+
 }
