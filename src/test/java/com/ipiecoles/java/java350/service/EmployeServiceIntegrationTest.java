@@ -11,6 +11,10 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+import org.mockito.ArgumentCaptor;
+import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
@@ -78,6 +82,31 @@ public class EmployeServiceIntegrationTest {
 
         Assertions.assertTrue(1 == employeList.size());
         Assertions.assertEquals(e, employeList.get(0));
+    }
+
+    @ParameterizedTest
+    @CsvSource({
+            "10000, 12000, 4, 3",
+            "12000, 12000, 2, 3",
+            "13200, 12000, 2, 4",
+            "15500, 12000, 3, 8"
+    })
+    public void integrationPerformanceCommercial(Long caTraite, Long objectifCa, Integer performance, Integer performanceFinal) throws EmployeException {
+        //Given
+        employeRepository.save(new Employe("Doe", "John", "C12345", LocalDate.now(), Entreprise.SALAIRE_BASE, 1, 1.0));
+        employeRepository.save(new Employe("Rib", "Samuel", "C12346", LocalDate.now(), Entreprise.SALAIRE_BASE +20.00, 1, 1.0));
+        employeRepository.save(new Employe("Simon", "Jc", "C12347", LocalDate.now(), Entreprise.SALAIRE_BASE -20.00, 1, 1.0));
+
+        Employe e1 = new Employe("Thomas", "Anderson","C12344",
+                LocalDate.now(),1500d,performance,1.0);
+        employeRepository.save(e1);
+
+        //When
+        employeService.calculPerformanceCommercial(e1.getMatricule(),caTraite,objectifCa);
+
+        //Then
+        Employe e = employeRepository.findByMatricule("C12344");
+        Assertions.assertEquals(e.getPerformance(), performanceFinal);
     }
 
 }

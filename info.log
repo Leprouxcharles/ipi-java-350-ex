@@ -1,85 +1,76 @@
-12-03-2020 10:41:29 - INFO  - c.i.java.java350.service.EmployeService - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
-12-03-2020 10:41:29 - INFO  - c.i.java.java350.service.EmployeService - Employé Employe{id=null, nom='Doe', prenom='John', matricule='T00345', dateEmbauche=2020-03-12, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé
-12-03-2020 10:41:29 - INFO  - c.i.java.java350.service.EmployeService - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
-12-03-2020 10:41:29 - WARN  - c.i.java.java350.service.EmployeService - Limite des 100000 matricules atteinte !
-12-03-2020 10:41:29 - INFO  - c.i.java.java350.service.EmployeService - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
-12-03-2020 10:41:29 - INFO  - c.i.java.java350.service.EmployeService - Matricul initial affecté à l'employé
-12-03-2020 10:41:29 - WARN  - c.i.java.java350.service.EmployeService - L'employé de matricule T00001 existe déjà en BDD
-12-03-2020 10:45:21 - INFO  - c.i.java.java350.service.EmployeService - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
-12-03-2020 10:45:21 - INFO  - c.i.java.java350.service.EmployeService - Employé Employe{id=null, nom='Doe', prenom='John', matricule='T00345', dateEmbauche=2020-03-12, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé
-12-03-2020 10:45:21 - INFO  - c.i.java.java350.service.EmployeService - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
-12-03-2020 10:45:21 - WARN  - c.i.java.java350.service.EmployeService - Limite des 100000 matricules atteinte !
-12-03-2020 10:45:21 - INFO  - c.i.java.java350.service.EmployeService - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
-12-03-2020 10:45:21 - INFO  - c.i.java.java350.service.EmployeService - Matricul initial affecté à l'employé
-12-03-2020 10:45:21 - WARN  - c.i.java.java350.service.EmployeService - L'employé de matricule T00001 existe déjà en BDD
-12-03-2020 12:55:50 - INFO  - c.i.j.j.s.EmployeServiceIntegrationTest - Starting EmployeServiceIntegrationTest on FR-L3356939 with PID 16524 (started by charles.leproux in C:\ipi-java-350-ex)
-12-03-2020 12:55:50 - INFO  - c.i.j.j.s.EmployeServiceIntegrationTest - No active profile set, falling back to default profiles: default
-12-03-2020 12:55:56 - INFO  - c.i.j.j.s.EmployeServiceIntegrationTest - Started EmployeServiceIntegrationTest in 6.283 seconds (JVM running for 9.033)
-12-03-2020 12:55:56 - INFO  - c.i.java.java350.service.EmployeService - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
-12-03-2020 12:55:56 - INFO  - c.i.java.java350.service.EmployeService - Employé Employe{id=2, nom='Doe', prenom='John', matricule='T12346', dateEmbauche=2020-03-12, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé
-12-03-2020 12:57:33 - INFO  - c.i.java.java350.service.EmployeService - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
-12-03-2020 12:57:33 - INFO  - c.i.java.java350.service.EmployeService - Employé Employe{id=null, nom='Doe', prenom='John', matricule='T00345', dateEmbauche=2020-03-12, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé
-12-03-2020 12:57:33 - INFO  - c.i.java.java350.service.EmployeService - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
-12-03-2020 12:57:33 - INFO  - c.i.java.java350.service.EmployeService - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
-12-03-2020 12:57:33 - INFO  - c.i.java.java350.service.EmployeService - Matricul initial affecté à l'employé
-2020-03-12 13:01:56 - INFO  - Starting EmployeServiceIntegrationTest on FR-L3356939 with PID 26476 (started by charles.leproux in C:\ipi-java-350-ex)
-2020-03-12 13:01:56 - INFO  - No active profile set, falling back to default profiles: default
-2020-03-12 13:02:02 - INFO  - Started EmployeServiceIntegrationTest in 6.275 seconds (JVM running for 8.999)
-2020-03-12 13:02:02 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
-2020-03-12 13:02:02 - INFO  - Employé Employe{id=2, nom='Doe', prenom='John', matricule='T12346', dateEmbauche=2020-03-12, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé
-2020-03-12 14:03:59 - INFO  - Starting EmployeServiceIntegrationTest on FR-L3356939 with PID 3468 (started by charles.leproux in C:\ipi-java-350-ex)
-2020-03-12 14:03:59 - INFO  - No active profile set, falling back to default profiles: default
-2020-03-12 14:04:06 - INFO  - Started EmployeServiceIntegrationTest in 7.363 seconds (JVM running for 11.162)
-2020-03-12 14:04:06 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
-2020-03-12 14:04:06 - INFO  - Employé Employe{id=2, nom='Doe', prenom='John', matricule='T12346', dateEmbauche=2020-03-12, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé
-2020-03-12 14:30:00 - INFO  - Starting EmployeServiceIntegrationTest on FR-L3356939 with PID 21640 (started by charles.leproux in C:\ipi-java-350-ex)
-2020-03-12 14:30:00 - INFO  - No active profile set, falling back to default profiles: default
-2020-03-12 14:30:06 - INFO  - Started EmployeServiceIntegrationTest in 5.919 seconds (JVM running for 8.496)
-2020-03-12 14:30:06 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
-2020-03-12 14:30:06 - INFO  - Employé Employe{id=2, nom='Doe', prenom='John', matricule='T12346', dateEmbauche=2020-03-12, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé
-2020-03-12 14:30:58 - INFO  - Starting EmployeServiceIntegrationTest on FR-L3356939 with PID 3380 (started by charles.leproux in C:\ipi-java-350-ex)
-2020-03-12 14:30:58 - INFO  - No active profile set, falling back to default profiles: default
-2020-03-12 14:31:03 - INFO  - Started EmployeServiceIntegrationTest in 5.838 seconds (JVM running for 8.484)
-2020-03-12 14:31:04 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
-2020-03-12 14:31:04 - INFO  - Employé Employe{id=2, nom='Doe', prenom='John', matricule='T12346', dateEmbauche=2020-03-12, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé
-2020-03-12 14:36:53 - INFO  - Starting EmployeServiceIntegrationTest on FR-L3356939 with PID 3948 (started by charles.leproux in C:\ipi-java-350-ex)
-2020-03-12 14:36:53 - INFO  - No active profile set, falling back to default profiles: default
-2020-03-12 14:36:58 - INFO  - Started EmployeServiceIntegrationTest in 5.825 seconds (JVM running for 8.306)
-2020-03-12 14:36:58 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
-2020-03-12 14:36:58 - INFO  - Employé Employe{id=2, nom='Doe', prenom='John', matricule='T12346', dateEmbauche=2020-03-12, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé
-2020-03-12 14:39:05 - INFO  - Starting EmployeServiceIntegrationTest on FR-L3356939 with PID 7368 (started by charles.leproux in C:\ipi-java-350-ex)
-2020-03-12 14:39:05 - INFO  - No active profile set, falling back to default profiles: default
-2020-03-12 14:39:11 - INFO  - Started EmployeServiceIntegrationTest in 5.771 seconds (JVM running for 8.259)
-2020-03-12 14:39:11 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
-2020-03-12 14:39:11 - INFO  - Employé Employe{id=2, nom='Doe', prenom='John', matricule='T12346', dateEmbauche=2020-03-12, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé
-2020-03-12 14:39:30 - INFO  - Starting EmployeServiceIntegrationTest on FR-L3356939 with PID 20552 (started by charles.leproux in C:\ipi-java-350-ex)
-2020-03-12 14:39:30 - INFO  - No active profile set, falling back to default profiles: default
-2020-03-12 14:39:35 - INFO  - Started EmployeServiceIntegrationTest in 5.957 seconds (JVM running for 8.9)
-2020-03-12 14:39:35 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
-2020-03-12 14:39:35 - INFO  - Employé Employe{id=2, nom='Doe', prenom='John', matricule='T12346', dateEmbauche=2020-03-12, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé
-2020-03-12 14:41:29 - INFO  - Starting EmployeServiceIntegrationTest on FR-L3356939 with PID 18112 (started by charles.leproux in C:\ipi-java-350-ex)
-2020-03-12 14:41:29 - INFO  - No active profile set, falling back to default profiles: default
-2020-03-12 14:41:35 - INFO  - Started EmployeServiceIntegrationTest in 6.466 seconds (JVM running for 9.119)
-2020-03-12 14:41:35 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
-2020-03-12 14:41:36 - INFO  - Employé Employe{id=2, nom='Doe', prenom='John', matricule='T12346', dateEmbauche=2020-03-12, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé
-2020-03-12 14:42:10 - INFO  - Starting EmployeServiceIntegrationTest on FR-L3356939 with PID 25072 (started by charles.leproux in C:\ipi-java-350-ex)
-2020-03-12 14:42:10 - INFO  - No active profile set, falling back to default profiles: default
-2020-03-12 14:42:16 - INFO  - Started EmployeServiceIntegrationTest in 6.694 seconds (JVM running for 9.523)
-2020-03-12 14:42:16 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
-2020-03-12 14:42:17 - INFO  - Employé Employe{id=2, nom='Doe', prenom='John', matricule='T12346', dateEmbauche=2020-03-12, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé
-2020-03-12 15:10:07 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
-2020-03-12 15:10:07 - INFO  - Employé Employe{id=null, nom='Doe', prenom='John', matricule='T00345', dateEmbauche=2020-03-12, salaire=1825.46, performance=1, tempsPartiel=1.0} bien sauvegardé
-2020-03-12 15:10:07 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
-2020-03-12 15:10:07 - WARN  - Limite des 100000 matricules atteinte !
-2020-03-12 15:10:07 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : BTS_IUT, Temps Partiel : 1.0
-2020-03-12 15:10:07 - INFO  - Matricul initial affecté à l'employé
-2020-03-12 15:10:07 - WARN  - L'employé de matricule T00001 existe déjà en BDD
-2020-03-12 16:16:06 - INFO  - Starting EmployeControllerTest on FR-L3356939 with PID 10852 (started by charles.leproux in C:\ipi-java-350-ex)
-2020-03-12 16:16:06 - INFO  - No active profile set, falling back to default profiles: default
-2020-03-12 16:16:10 - INFO  - Started EmployeControllerTest in 4.658 seconds (JVM running for 7.324)
-2020-03-12 16:18:08 - INFO  - Starting EmployeControllerTest on FR-L3356939 with PID 10832 (started by charles.leproux in C:\ipi-java-350-ex)
-2020-03-12 16:18:08 - INFO  - No active profile set, falling back to default profiles: default
-2020-03-12 16:18:11 - INFO  - Started EmployeControllerTest in 3.718 seconds (JVM running for 6.333)
-2020-03-12 16:49:14 - INFO  - Starting EmployeControllerTest on FR-L3356939 with PID 16372 (started by charles.leproux in C:\ipi-java-350-ex)
-2020-03-12 16:49:14 - INFO  - No active profile set, falling back to default profiles: default
-2020-03-12 16:49:17 - INFO  - Started EmployeControllerTest in 4.05 seconds (JVM running for 6.661)
+2020-03-14 00:12:59 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 00:12:59 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 00:12:59 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:12:59 - INFO  - Nom : Doe , Prénom : Jane, Poste : MANAGER, NiveauEtude : MASTER, Temps Partiel : 0.5
+2020-03-14 00:12:59 - INFO  - Employé Employe{id=3, nom='Doe', prenom='Jane', matricule='M00124', dateEmbauche=2020-03-14, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé
+2020-03-14 00:15:13 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 00:15:13 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 00:15:13 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:15:13 - INFO  - Nom : Doe , Prénom : Jane, Poste : MANAGER, NiveauEtude : MASTER, Temps Partiel : 0.5
+2020-03-14 00:15:13 - INFO  - Employé Employe{id=3, nom='Doe', prenom='Jane', matricule='M00124', dateEmbauche=2020-03-14, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé
+2020-03-14 00:16:11 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 00:16:11 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 00:16:11 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:16:11 - INFO  - Employé Employe{id=2, nom='Doe', prenom='John', matricule='C00123', dateEmbauche=null, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:22:55 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 00:22:55 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 00:22:55 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:22:55 - INFO  - Nom : Doe , Prénom : Jane, Poste : MANAGER, NiveauEtude : MASTER, Temps Partiel : 0.5
+2020-03-14 00:22:55 - INFO  - Employé Employe{id=3, nom='Doe', prenom='Jane', matricule='M00124', dateEmbauche=2020-03-14, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé
+2020-03-14 00:24:13 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 00:24:13 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 00:24:13 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:24:13 - INFO  - Nom : Doe , Prénom : Jane, Poste : MANAGER, NiveauEtude : MASTER, Temps Partiel : 0.5
+2020-03-14 00:24:13 - INFO  - Employé Employe{id=3, nom='Doe', prenom='Jane', matricule='M00124', dateEmbauche=2020-03-14, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé
+2020-03-14 00:24:13 - INFO  - Employé Employe{id=2, nom='Doe', prenom='John', matricule='C00123', dateEmbauche=null, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:27:25 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 00:27:25 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 00:27:26 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:27:26 - INFO  - Nom : Doe , Prénom : Jane, Poste : MANAGER, NiveauEtude : MASTER, Temps Partiel : 0.5
+2020-03-14 00:27:26 - INFO  - Employé Employe{id=3, nom='Doe', prenom='Jane', matricule='M00124', dateEmbauche=2020-03-14, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé
+2020-03-14 00:27:26 - INFO  - Employé Employe{id=2, nom='Doe', prenom='John', matricule='C00123', dateEmbauche=null, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:28:24 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 00:28:24 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 00:28:24 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:28:24 - INFO  - Nom : Doe , Prénom : Jane, Poste : MANAGER, NiveauEtude : MASTER, Temps Partiel : 0.5
+2020-03-14 00:28:24 - INFO  - Employé Employe{id=3, nom='Doe', prenom='Jane', matricule='M00124', dateEmbauche=2020-03-14, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé
+2020-03-14 00:28:24 - INFO  - Employé Employe{id=4, nom='Doe', prenom='John', matricule='C00124', dateEmbauche=null, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:36:09 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 00:36:09 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 00:36:10 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:36:10 - INFO  - Nom : Doe , Prénom : Jane, Poste : MANAGER, NiveauEtude : MASTER, Temps Partiel : 0.5
+2020-03-14 00:36:10 - INFO  - Employé Employe{id=3, nom='Doe', prenom='Jane', matricule='M00124', dateEmbauche=2020-03-14, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé
+2020-03-14 00:36:52 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 00:36:52 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 00:36:52 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:36:52 - INFO  - Nom : Doe , Prénom : Jane, Poste : MANAGER, NiveauEtude : MASTER, Temps Partiel : 0.5
+2020-03-14 00:36:52 - INFO  - Employé Employe{id=3, nom='Doe', prenom='Jane', matricule='M00124', dateEmbauche=2020-03-14, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé
+2020-03-14 00:36:52 - INFO  - Employé Employe{id=4, nom='Doe', prenom='John', matricule='C00124', dateEmbauche=null, salaire=1521.22, performance=2, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:38:36 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 00:38:36 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 00:38:36 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:38:36 - INFO  - Nom : Doe , Prénom : Jane, Poste : MANAGER, NiveauEtude : MASTER, Temps Partiel : 0.5
+2020-03-14 00:38:36 - INFO  - Employé Employe{id=3, nom='Doe', prenom='Jane', matricule='M00124', dateEmbauche=2020-03-14, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé
+2020-03-14 00:41:28 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 00:41:28 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 00:41:28 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:41:28 - INFO  - Nom : Doe , Prénom : Jane, Poste : MANAGER, NiveauEtude : MASTER, Temps Partiel : 0.5
+2020-03-14 00:41:28 - INFO  - Employé Employe{id=3, nom='Doe', prenom='Jane', matricule='M00124', dateEmbauche=2020-03-14, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé
+2020-03-14 00:43:15 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 00:43:16 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 00:43:16 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:43:16 - INFO  - Nom : Doe , Prénom : Jane, Poste : MANAGER, NiveauEtude : MASTER, Temps Partiel : 0.5
+2020-03-14 00:43:16 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 00:43:16 - INFO  - Employé Employe{id=3, nom='Doe', prenom='Jane', matricule='M00001', dateEmbauche=2020-03-14, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé
+2020-03-14 00:43:17 - WARN  - Le matricule C00123 n'existe pas !
+2020-03-14 01:05:53 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 01:05:53 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 01:05:54 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 01:05:54 - INFO  - Nom : Doe , Prénom : Jane, Poste : MANAGER, NiveauEtude : MASTER, Temps Partiel : 0.5
+2020-03-14 01:05:54 - INFO  - Employé Employe{id=3, nom='Doe', prenom='Jane', matricule='M00124', dateEmbauche=2020-03-14, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé
+2020-03-14 01:07:57 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 01:07:57 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 01:07:57 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 01:07:58 - INFO  - Nom : Doe , Prénom : Jane, Poste : MANAGER, NiveauEtude : MASTER, Temps Partiel : 0.5
+2020-03-14 01:07:58 - INFO  - Employé Employe{id=3, nom='Doe', prenom='Jane', matricule='M00124', dateEmbauche=2020-03-14, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé
+2020-03-14 01:07:58 - INFO  - Employé Employe{id=4, nom='Doe', prenom='John', matricule='C00123', dateEmbauche=null, salaire=1521.22, performance=2, tempsPartiel=1.0} bien sauvegardé
