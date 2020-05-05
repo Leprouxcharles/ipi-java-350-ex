@@ -1,5 +1,6 @@
 package com.ipiecoles.java.java350.model;
 
+import com.ipiecoles.java.java350.exception.EmployeException;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -58,16 +59,26 @@ public class Employe {
         return getNbRtt(LocalDate.now());
     }
 
-    public Integer getNbRtt(LocalDate d){
-        int i1 = d.isLeapYear() ? 365 : 366;
-        int var = 104;
-        switch (LocalDate.of(d.getYear(),1,1).getDayOfWeek()){
-            case THURSDAY: if(d.isLeapYear()) var =  var + 1; break;
-            case FRIDAY: if(d.isLeapYear()) var =  var + 2; else var =  var + 1; break;
-            case SATURDAY: var = var + 1; break;
+    /**
+     * Calcul du nombre de RTT:
+     * -Prend en compte les années bissextiles (voir variable nbYearDays)
+     * -Prend le nombre de samedi et de dimanche (voir variable nbWeekendDays + swtich case)
+     * -Prend en compte  le nombre de jours fériés ne tombant pas le week-end (voir variable nbAvailablePublicHolidays)
+     *
+     * @param date
+     * @return le nombre de RTT de l'employé
+     */
+    public Integer getNbRtt(LocalDate date){
+        int nbYearDays = date.isLeapYear() ? 366 : 365;
+        int nbWeekendDays = 104;
+        switch (LocalDate.of(date.getYear(),1,1).getDayOfWeek()){
+            case THURSDAY: if(date.isLeapYear()) nbWeekendDays =  nbWeekendDays + 1; break;
+            case FRIDAY: if(date.isLeapYear()) nbWeekendDays =  nbWeekendDays + 2; else nbWeekendDays =  nbWeekendDays + 1; break;
+            case SATURDAY: nbWeekendDays = nbWeekendDays + 1; break;
+            default: break;
         }
-        int monInt = (int) Entreprise.joursFeries(d).stream().filter(localDate -> localDate.getDayOfWeek().getValue() <= DayOfWeek.FRIDAY.getValue()).count();
-        return (int) Math.ceil((i1 - Entreprise.NB_JOURS_MAX_FORFAIT - var - Entreprise.NB_CONGES_BASE - monInt) * tempsPartiel);
+        int nbAvailablePublicHolidays = (int) Entreprise.joursFeries(date).stream().filter(localDate -> localDate.getDayOfWeek().getValue() <= DayOfWeek.FRIDAY.getValue()).count();
+        return (int) Math.ceil((nbYearDays - Entreprise.NB_JOURS_MAX_FORFAIT - nbWeekendDays - Entreprise.NB_CONGES_BASE - nbAvailablePublicHolidays) * tempsPartiel);
     }
 
     /**
@@ -102,6 +113,20 @@ public class Employe {
         }
         //Au pro rata du temps partiel.
         return prime * this.tempsPartiel;
+    }
+
+    //Augmenter salaire
+    public Double augmenterSalaire(double pourcentage) throws Exception {
+        Double poucentageMax = 0.15;
+        if(pourcentage == 0){
+            throw new Exception("Poucentage ne peut pas être null");
+        }else {
+            if(pourcentage < poucentageMax){
+                this.salaire =  this.salaire * (1 + pourcentage);
+            }
+        }
+
+        return  salaire;
     }
 
 
@@ -195,8 +220,13 @@ public class Employe {
         return tempsPartiel;
     }
 
-    public void setTempsPartiel(Double tempsPartiel) {
-        this.tempsPartiel = tempsPartiel;
+    public void setTempsPartiel(Double tempsPartiel) throws EmployeException {
+        if(tempsPartiel != null) {
+            this.tempsPartiel = tempsPartiel;
+            this.salaire = this.salaire * this.tempsPartiel;
+        }else {
+            throw new EmployeException("Le temps partiel " + tempsPartiel +" est incorrect");
+        }
     }
 
     @Override
@@ -211,6 +241,20 @@ public class Employe {
                 Objects.equals(dateEmbauche, employe.dateEmbauche) &&
                 Objects.equals(salaire, employe.salaire) &&
                 Objects.equals(performance, employe.performance);
+    }
+
+    @Override
+    public String toString() {
+        return "Employe{" +
+                "id=" + id +
+                ", nom='" + nom + '\'' +
+                ", prenom='" + prenom + '\'' +
+                ", matricule='" + matricule + '\'' +
+                ", dateEmbauche=" + dateEmbauche +
+                ", salaire=" + salaire +
+                ", performance=" + performance +
+                ", tempsPartiel=" + tempsPartiel +
+                '}';
     }
 
     @Override

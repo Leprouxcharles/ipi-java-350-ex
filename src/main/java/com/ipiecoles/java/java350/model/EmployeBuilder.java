@@ -1,5 +1,7 @@
 package com.ipiecoles.java.java350.model;
 
+import com.ipiecoles.java.java350.exception.EmployeException;
+
 import java.time.LocalDate;
 
 public final class EmployeBuilder {
@@ -59,7 +61,7 @@ public final class EmployeBuilder {
         return this;
     }
 
-    public Employe build() {
+    public Employe build() throws EmployeException {
         Employe employe = new Employe();
         employe.setId(id);
         employe.setNom(nom);

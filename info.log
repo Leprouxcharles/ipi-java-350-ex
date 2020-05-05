@@ -1,0 +1,76 @@
+2020-03-14 00:12:59 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 00:12:59 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 00:12:59 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:12:59 - INFO  - Nom : Doe , Prénom : Jane, Poste : MANAGER, NiveauEtude : MASTER, Temps Partiel : 0.5
+2020-03-14 00:12:59 - INFO  - Employé Employe{id=3, nom='Doe', prenom='Jane', matricule='M00124', dateEmbauche=2020-03-14, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé
+2020-03-14 00:15:13 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 00:15:13 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 00:15:13 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:15:13 - INFO  - Nom : Doe , Prénom : Jane, Poste : MANAGER, NiveauEtude : MASTER, Temps Partiel : 0.5
+2020-03-14 00:15:13 - INFO  - Employé Employe{id=3, nom='Doe', prenom='Jane', matricule='M00124', dateEmbauche=2020-03-14, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé
+2020-03-14 00:16:11 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 00:16:11 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 00:16:11 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:16:11 - INFO  - Employé Employe{id=2, nom='Doe', prenom='John', matricule='C00123', dateEmbauche=null, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:22:55 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 00:22:55 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 00:22:55 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:22:55 - INFO  - Nom : Doe , Prénom : Jane, Poste : MANAGER, NiveauEtude : MASTER, Temps Partiel : 0.5
+2020-03-14 00:22:55 - INFO  - Employé Employe{id=3, nom='Doe', prenom='Jane', matricule='M00124', dateEmbauche=2020-03-14, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé
+2020-03-14 00:24:13 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 00:24:13 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 00:24:13 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:24:13 - INFO  - Nom : Doe , Prénom : Jane, Poste : MANAGER, NiveauEtude : MASTER, Temps Partiel : 0.5
+2020-03-14 00:24:13 - INFO  - Employé Employe{id=3, nom='Doe', prenom='Jane', matricule='M00124', dateEmbauche=2020-03-14, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé
+2020-03-14 00:24:13 - INFO  - Employé Employe{id=2, nom='Doe', prenom='John', matricule='C00123', dateEmbauche=null, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:27:25 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 00:27:25 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 00:27:26 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:27:26 - INFO  - Nom : Doe , Prénom : Jane, Poste : MANAGER, NiveauEtude : MASTER, Temps Partiel : 0.5
+2020-03-14 00:27:26 - INFO  - Employé Employe{id=3, nom='Doe', prenom='Jane', matricule='M00124', dateEmbauche=2020-03-14, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé
+2020-03-14 00:27:26 - INFO  - Employé Employe{id=2, nom='Doe', prenom='John', matricule='C00123', dateEmbauche=null, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:28:24 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 00:28:24 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 00:28:24 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:28:24 - INFO  - Nom : Doe , Prénom : Jane, Poste : MANAGER, NiveauEtude : MASTER, Temps Partiel : 0.5
+2020-03-14 00:28:24 - INFO  - Employé Employe{id=3, nom='Doe', prenom='Jane', matricule='M00124', dateEmbauche=2020-03-14, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé
+2020-03-14 00:28:24 - INFO  - Employé Employe{id=4, nom='Doe', prenom='John', matricule='C00124', dateEmbauche=null, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:36:09 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 00:36:09 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 00:36:10 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:36:10 - INFO  - Nom : Doe , Prénom : Jane, Poste : MANAGER, NiveauEtude : MASTER, Temps Partiel : 0.5
+2020-03-14 00:36:10 - INFO  - Employé Employe{id=3, nom='Doe', prenom='Jane', matricule='M00124', dateEmbauche=2020-03-14, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé
+2020-03-14 00:36:52 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 00:36:52 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 00:36:52 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:36:52 - INFO  - Nom : Doe , Prénom : Jane, Poste : MANAGER, NiveauEtude : MASTER, Temps Partiel : 0.5
+2020-03-14 00:36:52 - INFO  - Employé Employe{id=3, nom='Doe', prenom='Jane', matricule='M00124', dateEmbauche=2020-03-14, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé
+2020-03-14 00:36:52 - INFO  - Employé Employe{id=4, nom='Doe', prenom='John', matricule='C00124', dateEmbauche=null, salaire=1521.22, performance=2, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:38:36 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 00:38:36 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 00:38:36 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:38:36 - INFO  - Nom : Doe , Prénom : Jane, Poste : MANAGER, NiveauEtude : MASTER, Temps Partiel : 0.5
+2020-03-14 00:38:36 - INFO  - Employé Employe{id=3, nom='Doe', prenom='Jane', matricule='M00124', dateEmbauche=2020-03-14, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé
+2020-03-14 00:41:28 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 00:41:28 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 00:41:28 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:41:28 - INFO  - Nom : Doe , Prénom : Jane, Poste : MANAGER, NiveauEtude : MASTER, Temps Partiel : 0.5
+2020-03-14 00:41:28 - INFO  - Employé Employe{id=3, nom='Doe', prenom='Jane', matricule='M00124', dateEmbauche=2020-03-14, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé
+2020-03-14 00:43:15 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 00:43:16 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 00:43:16 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 00:43:16 - INFO  - Nom : Doe , Prénom : Jane, Poste : MANAGER, NiveauEtude : MASTER, Temps Partiel : 0.5
+2020-03-14 00:43:16 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 00:43:16 - INFO  - Employé Employe{id=3, nom='Doe', prenom='Jane', matricule='M00001', dateEmbauche=2020-03-14, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé
+2020-03-14 00:43:17 - WARN  - Le matricule C00123 n'existe pas !
+2020-03-14 01:05:53 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 01:05:53 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 01:05:54 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 01:05:54 - INFO  - Nom : Doe , Prénom : Jane, Poste : MANAGER, NiveauEtude : MASTER, Temps Partiel : 0.5
+2020-03-14 01:05:54 - INFO  - Employé Employe{id=3, nom='Doe', prenom='Jane', matricule='M00124', dateEmbauche=2020-03-14, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé
+2020-03-14 01:07:57 - INFO  - Nom : Doe , Prénom : John, Poste : TECHNICIEN, NiveauEtude : CAP, Temps Partiel : 1.0
+2020-03-14 01:07:57 - INFO  - Matricul initial affecté à l'employé
+2020-03-14 01:07:57 - INFO  - Employé Employe{id=1, nom='Doe', prenom='John', matricule='T00001', dateEmbauche=2020-03-14, salaire=1521.22, performance=1, tempsPartiel=1.0} bien sauvegardé
+2020-03-14 01:07:58 - INFO  - Nom : Doe , Prénom : Jane, Poste : MANAGER, NiveauEtude : MASTER, Temps Partiel : 0.5
+2020-03-14 01:07:58 - INFO  - Employé Employe{id=3, nom='Doe', prenom='Jane', matricule='M00124', dateEmbauche=2020-03-14, salaire=1064.85, performance=1, tempsPartiel=0.5} bien sauvegardé
+2020-03-14 01:07:58 - INFO  - Employé Employe{id=4, nom='Doe', prenom='John', matricule='C00123', dateEmbauche=null, salaire=1521.22, performance=2, tempsPartiel=1.0} bien sauvegardé

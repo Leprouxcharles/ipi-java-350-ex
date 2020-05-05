@@ -6,17 +6,23 @@ import com.ipiecoles.java.java350.model.Entreprise;
 import com.ipiecoles.java.java350.model.NiveauEtude;
 import com.ipiecoles.java.java350.model.Poste;
 import com.ipiecoles.java.java350.repository.EmployeRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityExistsException;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class EmployeService {
 
     @Autowired
     private EmployeRepository employeRepository;
+
+    Logger logger = LoggerFactory.getLogger(this.getClass());
 
     /**
      * Méthode enregistrant un nouvel employé dans l'entreprise
@@ -31,19 +37,23 @@ public class EmployeService {
      * @throws EntityExistsException Si le matricule correspond à un employé existant
      */
     public void embaucheEmploye(String nom, String prenom, Poste poste, NiveauEtude niveauEtude, Double tempsPartiel) throws EmployeException, EntityExistsException {
-
+        logger.info("Nom : {} , Prénom : {}, Poste : {}, NiveauEtude : {}, Temps Partiel : {}", nom, prenom, poste, niveauEtude, tempsPartiel);
         //Récupération du type d'employé à partir du poste
         String typeEmploye = poste.name().substring(0,1);
 
         //Récupération du dernier matricule...
         String lastMatricule = employeRepository.findLastMatricule();
         if(lastMatricule == null){
+            logger.info("Matricul initial affecté à l'employé");
             lastMatricule = Entreprise.MATRICULE_INITIAL;
         }
         //... et incrémentation
         Integer numeroMatricule = Integer.parseInt(lastMatricule) + 1;
         if(numeroMatricule >= 100000){
+            logger.warn("Limite des 100000 matricules atteinte !");
             throw new EmployeException("Limite des 100000 matricules atteinte !");
+        }else if (numeroMatricule >= 80000){
+            logger.warn("Limite des 80000/100000 matricules atteinte !");
         }
         //On complète le numéro avec des 0 à gauche
         String matricule = "00000" + numeroMatricule;
@@ -51,6 +61,7 @@ public class EmployeService {
 
         //On vérifie l'existence d'un employé avec ce matricule
         if(employeRepository.findByMatricule(matricule) != null){
+            logger.warn("L'employé de matricule " + matricule + " existe déjà en BDD");
             throw new EntityExistsException("L'employé de matricule " + matricule + " existe déjà en BDD");
         }
 
@@ -58,6 +69,8 @@ public class EmployeService {
         Double salaire = Entreprise.COEFF_SALAIRE_ETUDES.get(niveauEtude) * Entreprise.SALAIRE_BASE;
         if(tempsPartiel != null){
             salaire = salaire * tempsPartiel;
+        }else {
+
         }
         salaire = Math.round(salaire*100d)/100d;
 
@@ -65,7 +78,7 @@ public class EmployeService {
         Employe employe = new Employe(nom, prenom, matricule, LocalDate.now(), salaire, Entreprise.PERFORMANCE_BASE, tempsPartiel);
 
         employeRepository.save(employe);
-
+        logger.info("Employé {} bien sauvegardé", employe.toString());
     }
 
 
@@ -90,17 +103,21 @@ public class EmployeService {
     public void calculPerformanceCommercial(String matricule, Long caTraite, Long objectifCa) throws EmployeException {
         //Vérification des paramètres d'entrée
         if(caTraite == null || caTraite < 0){
+            logger.warn("Le chiffre d'affaire traité ne peut être négatif ou null !");
             throw new EmployeException("Le chiffre d'affaire traité ne peut être négatif ou null !");
         }
         if(objectifCa == null || objectifCa < 0){
+            logger.warn("L'objectif de chiffre d'affaire ne peut être négatif ou null !");
             throw new EmployeException("L'objectif de chiffre d'affaire ne peut être négatif ou null !");
         }
         if(matricule == null || !matricule.startsWith("C")){
+            logger.warn("Le matricule ne peut être null et doit commencer par un C !");
             throw new EmployeException("Le matricule ne peut être null et doit commencer par un C !");
         }
         //Recherche de l'employé dans la base
         Employe employe = employeRepository.findByMatricule(matricule);
         if(employe == null){
+            logger.warn("Le matricule " + matricule + " n'existe pas !");
             throw new EmployeException("Le matricule " + matricule + " n'existe pas !");
         }
 
@@ -132,5 +149,39 @@ public class EmployeService {
         //Affectation et sauvegarde
         employe.setPerformance(performance);
         employeRepository.save(employe);
+        logger.info("Employé {} bien sauvegardé", employe.toString());
+    }
+
+    /**
+     *Cette méthode recherche les employe gangnant moins que l'employe du matricul renseingé en paramètre
+     * @param matricule le matricule de l'employe
+     * @return Liste d'employe
+     */
+    public List<Employe> EmployeGagnantMoinsQue(String matricule){
+        List<Employe> employeList = employeRepository.findEmployeGagnantMoinsQue(matricule);
+        return employeList;
+    }
+
+    /**
+     * Cette méthode calcule le salaire moyen de tous les employés ramené
+     * à un équivalent temps plein : Ex : Si un personne à mi-temps gagne 800 € son salaire ETP est 1600 €
+     */
+    public Double calculSalaireMoyenETP() throws Exception {
+        //On compte le nombre de salariés
+        Long nbEmployes = employeRepository.count();
+        if(nbEmployes == 0){
+            throw new Exception("Aucun employé, impossible de calculer le salaire moyen !");
+        }
+        //On récupère la somme des taux d'activité
+        Double smTxActivite = employeRepository.sumTempsPartiel();
+        if(smTxActivite > nbEmployes){
+            throw new Exception("Taux d'activité des employés incohérent !");
+        }
+
+        //On récupère la somme des salaires
+        Double smSalaire = employeRepository.sumSalaire();
+
+        //On calcul le salaire moyen par ETP
+        return Math.round(smSalaire * 100 / smTxActivite) / 100d;
     }
 }
